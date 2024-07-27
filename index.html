@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- css and external links -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="style1.css" type="text/css">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>  
+    <!--background animation and fonts -->
+    <div class="context">
+        <h1>STOPWATCH TIMER</h1>
+        <p><i>"Until we can manage TIME, we can manage nothing else"<br><br>- Peter F. Drucker</i></p>
+    </div>
+    <div class="area">
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+<!-- timer container -->
+<div class="container">
+    <div class="timer-Display">
+        00 : 00 : 00 : 00
+    </div>
+    <ul class="laps"></ul>
+      <div class="buttons">
+        <button id="startTimer" onclick="start()">Start</button>
+        <button id="pauseTimer" onclick="pause()">Pause</button>
+        <button id="resetTime" onclick="reset()">Reset</button>
+        <button id="lap" class="lapse" onclick="lap()" >Lap</button>
+        <button id="resetLap" class="lapse1" onclick="resetLap()" >Reset Laps</button>
+    </div>
+</div>
+<!-- javascript imported -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #ffffff;
+    width: 35%;
+    min-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding-top: 0px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+}
+
+.timer-Display{
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 0;
+    font-family: "Roboto", sans-serif;
+    color:  #4e54c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.laps{
+    text-align: center;
+    color:  #4e54c8;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.buttons{
+    width: 85%;
+    margin: 60px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    background-color:  #4e54c8;
+    color: #ffffff;
+    border: none;
+    font-family:  "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color:#ffffff ;
+    color: #4e54c8;
+    border: 3px solid  #4e54c8;
+    padding: 7px 17px;
+    
+} 
+.lapse{
+    left:80px;
+    position: relative;
+}
+ .lapse1{
+    left:85px;
+    position: relative;
+}
+@media (max-width: 460px) {
+  .container{
+    min-width: 320px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    left: 195px;
+    top: 450px;
+    width: 25%;
+  }
+  .buttons button{
+    font-size: 12px; 
+    padding: 10px 15px;
+  }
+  .timer-Display{
+    font-size: 2rem;
+    padding: 20px;
+  }
+   .lapse{
+    left:55px;
+    position: relative;
+  }
+   .lapse1{
+    left:55px;
+    position: relative;
+    width: 100px;
+}
+}
+@media (min-width: 401px)and (max-width: 620px) {
+    .container{
+        min-width: 360px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        position: absolute;
+        left: 203px;
+        top: 450px;
+        width: 25%;
+      }
+      .buttons button{
+        font-size: 12px; 
+      }
+      .timer-Display{
+        font-size: 2rem;
+        padding: 20px;
+      }
+       .lapse{
+        left:55px;
+        position: relative;
+      }
+       .lapse1{
+        left:55px;
+        position: relative;
+        width: 100px;
+    }
+}
+@media (min-width: 960px) and (max-width: 1220px) {
+    .container {
+        width: 50%;
+        padding: 20px;
+        position: absolute;
+        top:1100px;
+        left: 610px;
+    }
+    .buttons button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    .timer-Display {
+        font-size: 3rem;
+        padding: 30px;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+}
